@@ -29,19 +29,21 @@ export class ParentInfo extends Component {
     ]
     render() {
         return (
-            // <table>
-            //     <thead>
-            //         <tr>
-            //             <th>Name</th>
-            //             <th>Email`</th>
-            //             <th>Telephone</th>
-            //         </tr>                    
-            //     </thead>
-                
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email`</th>
+                        <th>Telephone</th>
+                    </tr>                    
+                </thead>
 
-            // </table>
 
-            <PersonDetails  name='Roha' email="roha.com" />
+                <PersonList names={this.names}/>  
+
+            </table>
+
+            // <PersonDetails  name='Roha' email="roha.com" />
         )
     }
 }
