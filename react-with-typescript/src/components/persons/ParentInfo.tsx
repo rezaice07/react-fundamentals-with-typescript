@@ -4,46 +4,50 @@ import PersonList from './PersonList'
 import { PersonListProps } from './PersonTypes'
 
 export class ParentInfo extends Component {
-    names=[
+    names = [
         {
-            name:'Roha',
-            email:'roha@gmail.com',
-            cellphone:'01718055620'
+            name: 'Roha',
+            email: 'roha@gmail.com',
+            cellphone: '01718055620'
         },
         {
-            name:'Jui',
-            email:'jui@gmail.com',
-            cellphone:'01718055621'
+            name: 'Jui',
+            email: 'jui@gmail.com',
+            cellphone: '01718055621'
         },
         {
-            name:'Junainah',
-            email:'junainah@gmail.com',
-            cellphone:'01718055622'
+            name: 'Junainah',
+            email: 'junainah@gmail.com',
+            cellphone: '01718055622'
         },
         {
-            name:'Marium',
-            email:'marium@gmail.com',
-            cellphone:'01718055623'
+            name: 'Marium',
+            email: 'marium@gmail.com',
+            cellphone: '01718055623'
         }
 
     ]
     render() {
         return (
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email`</th>
-                        <th>Telephone</th>
-                    </tr>                    
-                </thead>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Telephone</th>
+                        </tr>
+                    </thead>
 
 
-                <PersonList names={this.names}/>  
+                    <PersonList names={this.names} />
 
-            </table>
+                </table>
+                <br />
+                {/* Person Details */}
+                <PersonDetails name='Roha' email="roha.com" cellphone={''} />
 
-            // <PersonDetails  name='Roha' email="roha.com" />
+            </div>
         )
     }
 }

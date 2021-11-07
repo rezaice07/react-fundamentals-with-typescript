@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import {PersonDetailsProps} from './PersonTypes'
 
-export class PersonDetails extends Component<PersonDetailsProps,any> {
+export class PersonDetails extends Component<PersonDetailsProps> {
     render() {
         return (
             <div>
-                Person {this.props.name} email {this.props.email}
+                Person {this.props.name}; email {this.props.email}
             </div>
         )
     }

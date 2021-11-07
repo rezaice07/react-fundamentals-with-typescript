@@ -9,6 +9,7 @@ import Oscar from './components/statuses/Oscar';
 import Button from './components/EventProps/Button';
 import Input from './components/Inputs/Input';
 import Container from './components/Stylings/Container';
+import CountryList from './components/persons/CountryList';
 
 class App extends React.Component {
  
@@ -23,7 +24,7 @@ class App extends React.Component {
       <div className="App">
         {/* <Greet name={this.name} numerOffMsh={7} /> */}
         {/* <PersonList names={this.state.persons} /> */}
-        <ParentInfo/>
+        {/* <ParentInfo/> */}
         {/* <Status status='success'/> */}
         {/* Children Props */}
         {/* <Oscar>
@@ -35,6 +36,7 @@ class App extends React.Component {
 
         {/* <Container styles={{border:'1px solid black', padding:'1rem'}}/> */}
 
+        <CountryList userName='Bangladesh'/>
       </div>
     )
   }
