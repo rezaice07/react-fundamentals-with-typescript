@@ -10,6 +10,7 @@ import Button from './components/EventProps/Button';
 import Input from './components/Inputs/Input';
 import Container from './components/Stylings/Container';
 import CountryList from './components/persons/CountryList';
+import General from './components/commons/General';
 
 class App extends React.Component {
  
@@ -36,7 +37,9 @@ class App extends React.Component {
 
         {/* <Container styles={{border:'1px solid black', padding:'1rem'}}/> */}
 
-        <CountryList userName='Bangladesh'/>
+        {/* <CountryList userName='Bangladesh'/> */}
+
+        <General/>
       </div>
     )
   }
